@@ -24,7 +24,10 @@ module.exports = () => {
         title: 'J.A.T.E.'
       }),
       //new Inject Manifest
-
+      new InjectManifest({
+        swSrc: './src-sw.js',
+        swDest: 'src-sw.js',
+      }),
       //new WebpackPwaManifest
 
     ],
