@@ -18,12 +18,22 @@ module.exports = () => {
       path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
-      
+      //HTML webpackPlugin
+
+      //new Inject Manifest
+
+      //new WebpackPwaManifest
+
     ],
 
     module: {
       rules: [
-        
+        {
+          //css loader here
+        },
+        {
+          //babel-loader here
+        }
       ],
     },
   };
