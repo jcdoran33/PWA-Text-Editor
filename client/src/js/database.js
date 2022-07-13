@@ -22,7 +22,7 @@ export const putDb = async (content) => {
   const result = await request;
   //add if condition to display proper message of error or success
   if (!result) {
-    console.error('putDb not implemented');
+    console.error('putDb not implemented - "result" is coming back undefined');
   } else {
     console.log('Success! Data was saved to the database. Data: ', result);
   }
@@ -39,7 +39,7 @@ export const getDb = async () => {
   const result = await request;
   // if condition to provide proper message of error or success
   if (!result) {
-    console.error('getDb not implemented');
+    console.error('getDb not implemented - "result" is coming back undefined');
   } else {
     console.log('Success! Data was pulled from the database. Data: ', result);
   }
