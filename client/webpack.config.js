@@ -52,7 +52,8 @@ module.exports = () => {
     module: {
       rules: [
         {
-          //css loader here
+          test: /\.css$/i,
+          use: ['style-loader', 'css-loader'],
         },
         {
           //babel-loader here
