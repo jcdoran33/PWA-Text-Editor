@@ -18,9 +18,9 @@ export const putDb = async (content) => {
   const jateDb = await openDB('jate', 1);
   const tx = jateDb.transaction('jate', 'readwrite');
   const store = tx.objectStore('jate');
-  const request = store.put({ value: content }); //is value correct here?? ** just changed store.add to store.put, since this is a put not a post
+  const request = store.put({ value: content }); //is value correct here?? or editor.value?** just changed store.add to store.put, since this is a put not a post
   const result = await request;
-  console.log('Success! Data was saved to the database. Data: ', result);
+  console.log('Success! Data was saved to the database. Data: ', result); // this reuslt returns a number of items in the indexdb, not the data result we want
 
 };
 
@@ -31,7 +31,7 @@ export const getDb = async () => {
   const tx = jateDb.transaction('jate', 'readonly');
   const store = tx.objectStore('jate');
   const request = store.getAll();
-  const result = await request;
+  const result = await request; // do need to add an index number? like: await request[request.length - 1]
   console.log('Success! Data was pulled from the database. Data: ', result);
   //then return the result
   return result;
