@@ -13,4 +13,4 @@ If you clone this repository to your computer, the package.json will have ```npm
 
 
 ## Screenshot of Deployed App
-
+![screenshot](./screenshot.png)
