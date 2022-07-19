@@ -10,7 +10,7 @@ Express.js is used for routing and nodemon is used for development purposes. Ind
 If you clone this repository to your computer, the package.json will have ```npm start``` run the build and then launch the server. You can use the Install button in the header if you wish to run the application outside the Heroku deployment.
 
 ## Link to Heroku Deployment
-
+Here is a link to the deployed app on Heroku: [Deployed Application](https://pwa-text-editor-jcd.herokuapp.com/)
 
 ## Screenshot of Deployed App
 ![screenshot](./screenshot.png)
